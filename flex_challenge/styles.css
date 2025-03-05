@@ -1,0 +1,72 @@
+/*Challenge 1*/
+nav ul{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    button{
+        height:25px;
+        background-color: steelblue;
+        border-style: none;
+        border-radius: 8px;
+        a{
+            color:white;
+            font-size: 13px;
+        }
+    }
+}
+
+
+/*Challenge 2*/
+section{
+    display:flex;
+    article{
+        padding: 10px;
+        margin: 10px;
+        background: steelblue;
+        border-radius: 8px;
+        border: steelblue 1px solid;
+        color:white;
+        flex-direction: row;
+        flex:1;
+    }
+}
+
+
+
+/*Challenge 3*/
+/*Write your CSS here*/
+.parent{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+    .child{
+        padding: 4px;
+        margin: 5px;
+        background: steelblue;
+        border-radius: 8px;
+        border: steelblue 1px solid;
+        color:white;
+    }
+
+}
+
+/*Challenge 4*/
+ul.secondul {
+    display:flex;
+    list-style: none;
+    font-size: 20px;
+    flex-wrap: wrap;
+    gap:8px;
+    li {
+        padding: 5px;
+        margin: 5px;
+        background: steelblue;
+        border-radius: 8px;
+        border: steelblue 1px solid;
+        color:white;
+    }
+}
+
+
