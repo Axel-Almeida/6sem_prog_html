@@ -90,3 +90,11 @@ h6{
   border-color:white;
   color:white;
 }
+
+.box{
+  text-align: center;
+}
+.inside{
+  display:flex;
+  flex-wrap: wrap;
+}

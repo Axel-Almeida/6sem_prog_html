@@ -1,0 +1,62 @@
+.fatty{
+    width: 1800px; 
+    margin:auto;
+}
+
+.top-left{
+    float:left; 
+    font-family:'Times New Roman', Times, serif;
+    color:white;
+    font-size: 1.8rem;
+}
+
+.top-right{
+    float:Right; 
+    font-family:'Times New Roman', Times, serif;
+    color:white;
+}
+
+.title{
+    background-color: olive;
+    color:white; 
+    text-align: center; 
+    font-size: 3rem;
+}
+
+.img-contaniner{
+    object-fit: cover;
+}
+
+.iamg{
+    background-image: url(https://plus.unsplash.com/premium_photo-1661329930662-19a43503782f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGF3eWVyfGVufDB8fDB8fHww); 
+    width: 1800px;
+    height: 250px;
+    background-position: center;
+    font-size: 2.5rem;
+    text-align: left;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-1{
+    background-color: rgb(208, 166, 108);
+    color: rgb(208, 166, 108);
+    display:flex;
+}
+.card{
+    margin-top:1rem;
+    margin-left: 1rem;
+    flex-wrap:wrap;
+    flex:1;
+    .card-img,.inof{
+    flex-wrap:wrap;
+}
+}
+
+.card-img{
+    width: 200px;
+    height:200px; 
+    background-position: right;
+}
+
+
