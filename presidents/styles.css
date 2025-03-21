@@ -13,6 +13,7 @@ header {
     display:flex;
     padding-top:16px;
     gap:16px;
+    flex-wrap: wrap;
 }
 
 .name-card h2, .name-card p{
@@ -24,6 +25,7 @@ header {
     border: 1px solid lightgray;
     border-radius:16px;
     padding:8px;
+    
 }
 
 .name-card img{
