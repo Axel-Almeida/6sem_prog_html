@@ -1,0 +1,43 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#aaa;
+}
+
+.header{
+    background-color: #e5e5e5;
+    color:#aaa;
+    padding: 15px;
+    text-align:center;
+}
+
+a{
+    background-color: #e5e5e5;
+    color:black;
+    padding:8px;
+
+}
+
+.sidebar{
+    background-color: #e5e5e5;
+    padding:15px; 
+    text-align:center;
+}
+
+.footer{
+    background-color: #e5e5e5;
+    padding:15px; 
+    text-align:center;
+}
+
+.main{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 7px 0;
+    gap:7px;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    gap:7px;
+}
