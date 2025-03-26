@@ -1,0 +1,143 @@
+.fatty{
+    width: 1800px; 
+    margin:auto;
+}
+
+a{
+    padding:0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all linear 0.2s;
+}
+
+a:hover{
+    background-color: rgb(209, 122, 0);
+}
+
+.nav {
+    background-color: rgb(208, 166, 108);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    
+    .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:20px;
+    }
+    
+    .nav a {
+    color: white;
+    text-decoration: none;
+    }
+
+.title{
+    background-color: olive;
+    color:white; 
+    text-align: center; 
+    font-size: 3rem;
+}
+
+.img-contaniner{
+    object-fit: cover;
+}
+
+.iamg{
+    background-image: url(https://plus.unsplash.com/premium_photo-1661329930662-19a43503782f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGF3eWVyfGVufDB8fDB8fHww); 
+    width: 1800px;
+    height: 250px;
+    background-position: center;
+    font-size: 2.5rem;
+    text-align: left;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-1{
+    background-color: rgb(208, 166, 108);
+    display:flex;
+}
+.card{
+    margin:1rem;
+    display: flex;
+    flex:1;
+    transition: all ease 0.2s;   
+}
+
+.card:hover{
+    background-color: olive;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px rgba(0,0,0,0.2);
+    border:solid 1px olivedrab;
+    border-radius: 8px;
+}
+
+.inof{
+    color: white;
+    flex-wrap:wrap;
+    width:200px;
+    margin-left: 1rem;
+}
+
+.card-img{
+    width: 200px;
+    height:200px; 
+    background-position: right;
+}
+
+.text{
+    margin-top: 0;
+    padding-top: 15px;
+    border-top: grey 1px solid;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+    }
+    
+    .products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:12px;
+    }
+    
+    .product {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 16px;
+    transition: all ease 0.1s;
+    }
+
+    .product:hover{
+        background-color: chocolate;
+        color: white;
+        transform: scale(1.1);
+        box-shadow: 0 0 15px 10px rgba(0,0,0,0.2);
+        border:solid 1px black;
+    }
+
+    .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    }
+
+.footer{
+    margin-top: 2rem;
+    text-align: center;
+    background-color: olive;
+    color: white;
+    font-size: 1.5rem;
+}
