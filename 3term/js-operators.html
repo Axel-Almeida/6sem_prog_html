@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison and Logical Operators</title>
+</head>
+<body>
+    <script>
+        //Exercise 1
+        let value1=10;
+        let value2="hello";
+        let result1=value1 > 5;
+        let result2=value2.length==5;
+        let finalResult=result1&&result2;
+        console.log(finalResult);
+        console.log("End Execise1")
+
+        //Exercise 2
+        let stringA="apple";
+        let stringB="banana";
+        console.log(stringA<stringB);
+        console.log("End exercise2")
+
+        //Exercise 3
+        let num1=7;
+        let num2="7";
+        let strictEquality=num1===num2;
+        let looseEquality=num1==num2;
+        console.log(strictEquality);
+        console.log(looseEquality);
+        /*Because is comparing the properties not the content*/
+        console.log("End Exercise3")
+
+        //Exercise 4
+        let sunny=false;
+        let raining=true;
+        let canGoOutside=sunny||raining;
+        console.log(canGoOutside);
+        console.log("End Exercise4")
+
+        //Exercise 5
+        let score=85;
+        let highscore=90;
+        let levelcompleted=true;
+        let comparison=score>=80
+        let bonusavailable=comparison&&levelcompleted;
+        let strict=score===highscore;
+        let extrapoints=strict||bonusavailable;
+        console.log(extrapoints);
+        /*The user will receive extra points, becasue of bonus points, although socre=85 does not equal highsocre=90*/
+        console.log("End Exercise5")
+
+        
+    </script>
+</body>
+</html>
