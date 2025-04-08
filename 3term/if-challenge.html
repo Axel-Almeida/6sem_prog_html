@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Challenge</title>
+</head>
+<body>
+    <script>
+        const sec=prompt("Enter a year to check if its a leap year:")
+        if (sec%4==0){
+            if(sec%100==0){
+                if(sec%400==0){
+                    console.log(sec+" is a leap year.");
+                }
+                else{
+                    console.log(sec+" is not a leap year.")
+                }
+            }
+            else{
+                console.log(sec+"is a leap year.")
+            }
+        }
+        else{
+            console.log(sec+" is not a leap year.")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript If/Else Statements</title>
+</head>
+<body>
+    |<script>
+        //Exercise 1
+        const tm_dy=new Date();
+        let datetime=tm_dy.getHours();
+        if (datetime<=11){
+            console.log("Good morning!");
+        }
+        else if (18>=datetime){
+            console.log("Good afternoon!");
+        }
+        else{
+            console.log("Good evening!");
+        };
+
+        let sn=prompt("Enter a hour from 0-23:")
+        if (sn<=11){
+            console.log("Good morning!")
+        }
+        else if (18>=sn){
+            console.log("Good afternoon!")
+        }
+        else{
+            console.log("Good evening!")
+        }
+
+        //Exercise 2
+        const num_sec=prompt("Enter a number:")
+        if (num_sec%2 ==0){
+            console.log("The number is even.");
+        }
+        else{
+            console.log("The number is odd.");
+        };
+
+        //Exercise 3
+        const grade=prompt("Check your elegibilty for scholarship:")
+        let exta_curri=true
+        if (grade>=85){
+            if (exta_curri==true){
+                console.log("Eligible for scholarship.");
+            }
+            else{
+                console.log("Not eligible for scholarship.");
+            }
+        }
+        else{
+            console.log("Not eligble for scholarship.");
+        };
+
+        //Exercise 4
+        let heads=0;
+        let tails=0;
+        x=(Math.floor(Math.random()*2)==0);
+        if (x){
+            console.log("heads");
+        }
+        else{
+            console.log("tails");
+        };
+    </script>
+</body>
+</html>
