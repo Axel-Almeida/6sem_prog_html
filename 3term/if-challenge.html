@@ -11,18 +11,26 @@
         if (sec%4==0){
             if(sec%100==0){
                 if(sec%400==0){
-                    console.log(sec+" is a leap year.");
+                    alert(sec+" is a leap year.");
                 }
                 else{
-                    console.log(sec+" is not a leap year.")
+                    alert(sec+" is not a leap year.")
                 }
             }
             else{
-                console.log(sec+"is a leap year.")
+                alert(sec+"is a leap year.")
             }
         }
         else{
-            console.log(sec+" is not a leap year.")
+            alert(sec+" is not a leap year.")
+        }
+
+        const year=prompt("Enter a year to check if its a leap year:")
+        if((year%4==0 && year%100!==0) || year%400==0){
+            alert(year+" is a leap year.")
+        }
+        else{
+            alert(year+ " is not a leap year.")
         }
     </script>
 </body>
