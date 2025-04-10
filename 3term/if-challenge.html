@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        //Chalenge 1
         const sec=prompt("Enter a year to check if its a leap year:")
         if (sec%4==0){
             if(sec%100==0){
@@ -14,24 +15,41 @@
                     alert(sec+" is a leap year.");
                 }
                 else{
-                    alert(sec+" is not a leap year.")
+                    alert(sec+" is not a leap year.");
                 }
             }
             else{
-                alert(sec+"is a leap year.")
+                alert(sec+"is a leap year.");
             }
         }
         else{
-            alert(sec+" is not a leap year.")
-        }
+            alert(sec+" is not a leap year.");
+        };
 
+        //Challenge 2
         const year=prompt("Enter a year to check if its a leap year:")
         if((year%4==0 && year%100!==0) || year%400==0){
-            alert(year+" is a leap year.")
+            alert(year+" is a leap year.");
         }
         else{
-            alert(year+ " is not a leap year.")
+            alert(year+ " is not a leap year.");
+        };
+
+        //challenge 3
+        const next=prompt("Enter a year to check if its a leap year:")
+        if(next%400==0){
+            alert(next+" is a leap year.");
         }
+        else if (next%100!==0){
+            alert(next+" is NOT a leap year.");
+        }
+        else if (next%4==0){
+            alert(next+" is a leap year.");
+        }
+        else{
+            alert(next+" is NOT a leap year.");
+        };
+        
     </script>
 </body>
 </html>
