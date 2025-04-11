@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <script>
+        //Exercise 1
+        function add7(nm){
+            console.log(nm+7);
+        };
+        let ing=prompt("Enter a number:");
+        let number=parseInt(ing);
+        add7(number);
+
+        //Exercise 2
+        function multiply(o,t){
+            console.log(o*t);
+        };
+        let o=prompt("Enter one number:");
+        let t=prompt("Enter a second number:");
+        let one=parseInt(o);
+        let two=parseInt(t);
+        multiply(one,two)
+
+        //Exercise 3
+        function lastletter(string){
+            let sl=string.slice(-1);
+            console.log(sl);
+        };
+        let chose=prompt("Enter a word:");
+        lastletter(chose);
+
+        //Exercise 4
+        function cpaitalize(s){
+            let wrong=s.charAt(0).toUpperCase()+s.slice(1).toLowerCase();
+            console.log(wrong);
+        };
+        let sentence=prompt("Enter a sentence with upper o lower case:");
+        cpaitalize(sentence);
+    </script>
+</body>
+</html>
