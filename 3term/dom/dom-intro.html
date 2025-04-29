@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Today is <span id="label"></span>
+    </p>
+
+    <script>
+        const date=new Date();
+        let weekday =date.getDay();
+        console.log(weekday);
+        let label;
+
+        if (weekday==0){
+            label="Sunday.";
+        }
+        else if(weekday==1){
+            label="Monday.";
+        }
+        else if(weekday==2){
+            label="Tuesday.";
+        }
+        else if(weekday==3){
+            label="Wednesday.";
+        }
+        else if(weekday==4){
+            label="Thursday.";
+        }
+        else if(weekday==5){
+            label="Friday.";
+        }
+        else{
+            label="Saturday.";
+        };
+
+        console.log(label);
+        document.getElementById("label").innerHTML=label;
+    </script>
+</body>
+</html>
