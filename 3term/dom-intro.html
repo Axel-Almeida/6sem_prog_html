@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: system-ui ;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        p{
+            font-size: 4rem;
+            font-weight: bold;
+            background-color: whitesmoke;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            color:black;
+        }
+
+        button{
+            margin: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+        Today is <span id="label"></span>
+    </p>
+
+    <button onclick="changeColor()">Make the text <span id="color">Red</span>!</button>
+
+    <script>
+        const date=new Date();
+        let weekday =date.getDay();
+        console.log(weekday);
+        let label;
+
+        if (weekday==0){
+            label="Sunday.";
+        }
+        else if(weekday==1){
+            label="Monday.";
+        }
+        else if(weekday==2){
+            label="Tuesday.";
+        }
+        else if(weekday==3){
+            label="Wednesday.";
+        }
+        else if(weekday==4){
+            label="Thursday.";
+        }
+        else if(weekday==5){
+            label="Friday.";
+        }
+        else{
+            label="Saturday.";
+        };
+
+        console.log(label);
+        document.getElementById("label").innerHTML=label;
+
+        function changeColor(){
+            let myText=document.querySelector("p");
+            let currrentColor=window.getComputedStyle(myText).color;
+            console.log(currrentColor);
+            
+            if(currrentColor=="rgb(0, 0, 0)"){
+                myText.style.color="red";
+                document.getElementById("color").innerHTML="Black";
+
+            } else{
+                myText.style.color="black";
+                document.getElementById("color").innerHTML="Red";
+            }
+            
+        };
+
+    </script>
+</body>
+</html>
