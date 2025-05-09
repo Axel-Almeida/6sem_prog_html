@@ -1,9 +1,49 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke
+}
+
+
+h1{
+    color:crimson;
+    text-align: center;
+}
+
 forms{
     display:flex;
     flex-direction: column;
-    align-items:start;
+    align-items:center;
     gap:10px;
 }
+
+.names{
+    color:blue;
+}
+
+.dt{
+    color:blueviolet;
+}
+
 .input-area{
     color:red;
+}
+
+.m{
+    color:blue;
+}
+
+.f{
+    color:red;
+}
+
+.o{
+    color:blueviolet;
+}
+
+.p{
+    color:lightseagreen;
+}
+
+.password{
+    color:brown;
 }
