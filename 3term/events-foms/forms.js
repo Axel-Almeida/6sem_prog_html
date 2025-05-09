@@ -33,9 +33,16 @@ select.style.color = select.options[select.selectedIndex].dataset.color;
 let submit=document.querySelector("input[type=submit]")
 let fname=document.querySelector("input[name=fn]")
 let lname=document.querySelector("input[name=ln]")
+let br=document.querySelector("input[name=lbr]")
+let ag=document.querySelector("input[name=ag]")
+let em=document.querySelector("input[name=em]")
+let country=document.querySelector("input[name=country]")
+let gender=document.querySelector("input[name=gender]")
+let color=document.querySelector("input[name=color]")
+let nwps=document.querySelector("input[name=nwps]")
 
 submit.addEventListener("click",printInfo);
 
 function printInfo(){
-    console.log(fname.value+" "+lname.value)
+    console.log(fname.value+" "+lname.value+" "+br.value+" "+ag.value+" "+em.value+" "+country.value+" "+gender.value+" "+color.value+" "+nwps.value)
 }
