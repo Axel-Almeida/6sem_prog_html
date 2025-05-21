@@ -1,0 +1,27 @@
+*{
+    font-family: system-ui;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 96vh;
+}
+
+#clicker{
+    width: 700px;
+    height: 300px;
+    border:1px solid lightgrey;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 20px whitesmoke;
+    box-shadow: inset 0 0 10px lightgray;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
