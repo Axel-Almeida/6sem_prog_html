@@ -1,0 +1,44 @@
+*{
+    font-family: system-ui;
+
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 96vh;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.result{
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+span{
+    font-weight: normal;
+}
+
+.emoji-container{
+    display:flex;
+    gap:3rem;
+    margin: 40px;
+}
+
+#esc,#epa,#ero{
+    flex-wrap: wrap;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: rgb(216, 127, 246, 25%);
+    border:1px rebeccapurple solid;
+    border-radius: 16px;
+    user-select: none;
+}
