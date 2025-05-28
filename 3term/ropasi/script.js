@@ -7,14 +7,11 @@ let L=document.querySelector(".loss");
 let D=document.querySelector(".draw");
 
 let TR=document.querySelector(".text-result")
+let CR=document.querySelector(".computer-result")
 
 win=0
 loss=0
 draw=0
-
-function gameStart(){
-    console.log("todo bien")
-}
 
 esc.addEventListener("click", function (){
     //console.log(esc);
@@ -28,18 +25,21 @@ esc.addEventListener("click", function (){
         //console.log(draw);
         D.textContent=draw;
         TR.textContent="It's a Draw!";
+        CR.textContent=ram
     }else if(esc.textContent==="✂️"&&ram==="📄"){
         //console.log("here");
         win+=1;
         //console.log(draw);
         W.textContent=win;
-        TR.textContent="You've Wined!";
+        TR.textContent="You've Winned!";
+        CR.textContent=ram
     }else if(esc.textContent==="✂️"&&ram==="🪨"){
         //console.log("here");
         loss+=1;
         //console.log(draw);
         L.textContent=loss;
         TR.textContent="You've Lost!";
+        CR.textContent=ram
     }
 
 });
@@ -55,17 +55,20 @@ epa.addEventListener("click", function (){
         //console.log(draw);
         D.textContent=draw;
         TR.textContent="It's a Draw!";
+        CR.textContent=ram
     }else if(epa.textContent==="📄"&&ram==="🪨"){
         //console.log("here");
         win+=1;
         //console.log(draw);
         W.textContent=win;
-        TR.textContent="You've Wined!";
+        TR.textContent="You've Winned!";
+        CR.textContent=ram
     }else if(epa.textContent==="📄"&&ram==="✂️"){
         //console.log("here");
         loss+=1;
         //console.log(draw);
         L.textContent=loss;
+        CR.textContent=ram
         TR.textContent="You've Lost!";
     }
 });
@@ -81,17 +84,20 @@ ero.addEventListener("click", function (){
         //console.log(draw);
         D.textContent=draw;
         TR.textContent="It's a Draw!";
+        CR.textContent=ram
     }else if(ero.textContent==="🪨"&&ram==="✂️"){
         //console.log("here");
         win+=1;
         //console.log(draw);
         W.textContent=win;
-        TR.textContent="You've Wined!";
+        TR.textContent="You've Winned!";
+        CR.textContent=ram
     }else if(ero.textContent==="🪨"&&ram==="📄"){
         //console.log("here");
         loss+=1;
         //console.log(draw);
         L.textContent=loss;
         TR.textContent="You've Lost!";
+        CR.textContent=ram
     }
 });
